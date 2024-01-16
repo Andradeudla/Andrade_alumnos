@@ -9,3 +9,18 @@ struct alumno { // define una estructura para los alumnos
     float promedio; // promedio del alumno
 };
 
+int main (){
+    struct alumno estudiantes[100]; // declara un array de estructuras de alumnos
+    int opcion, i = 0; // declara las variables opcion i
+
+    while (1)
+    {
+        printf("1) Ingreso de nuevos estudiantes\n"); // imprime la opción 1 del menu
+        printf("2) Listado de estudiantes\n"); // imprime la opción 2 del menu
+        printf("3) Salir\n"); // imprime la opción 3 del menu
+        printf("Seleccione una opcion: "); // pide al usuario que elija una opcion
+        scanf("%d", &opcion); // lee la opcion del usuario
+        fflush(stdin); // limpia el buffer de entrada
+    }
+    
+}
