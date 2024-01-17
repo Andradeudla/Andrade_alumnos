@@ -15,6 +15,7 @@ int main (){
 
     while (1)
     {
+        printf("---------Menu de Opciones--------- \n");// ingresamos un titulo para darle estetica al menu
         printf("1) Ingreso de nuevos estudiantes\n"); // imprime la opción 1 del menu
         printf("2) Listado de estudiantes\n"); // imprime la opción 2 del menu
         printf("3) Salir\n"); // imprime la opción 3 del menu
@@ -47,6 +48,7 @@ int main (){
         case 2: // caso en el que el usuario elige la opcion 2
 
                 for(int j = 0; j < i; j++) { // bucle que recorre todos los estudiantes ingresados
+                    printf("-------------Listado de Alumnos----------- \n");
                     printf("\nEstudiante %d:\n", j+1); // imprime el encabezado del estudiante
                     printf("Matricula: %d\n", estudiantes[j].matricula); // imprime la matricula del estudiante
                     printf("Nombre: "); // imprime el nombre del estudiante
@@ -59,9 +61,11 @@ int main (){
                 }
                 break; // termina el caso 2
         case 3: // caso en el que el usuario elige la opcion 3
+        printf("Saliendo del programa :).......");
         exit(0); // termina el programa
         
-        default:
+        default: // Caso en el que el usuario elige una opcion no valida
+        printf("Opcion no valida. Intente de nuevo.\n"); // imprime un mensaje de error
             break;
         }
     }
